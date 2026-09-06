@@ -1,0 +1,92 @@
+print("Hello/World"); 
+
+/*---------------*/
+
+// variable declaration: 
+atom X = 10.0f; // float
+atom Y = 10i; // integer
+atom Z = "Z"; // string 
+
+// immutable declaration: 
+const atom O = 10i; 
+const atom K = 10.0f;
+const atom L = "L";
+
+// strings, float and ints is all one has in terms of types
+
+
+func i(): 
+   // yes it uses indention
+;
+
+async func o(): 
+ await /*value*/: 
+  // yes async functions as well 
+;
+
+
+for: 
+X, X >= 10.0f: 
+// logic here
+;
+
+// yes semicolons are how we end an indented block 
+
+// if statements
+if: X >= 9.0f: 
+ //logic
+; else if: X == 10.0f: 
+ // logic
+; else (NULL): 
+ // logic
+;
+
+
+// string manip
+Z = "J";
+ 
+i() // function call
+
+// capture
+
+i().return = Z;
+
+// anon list
+
+list< 
+1. X, 
+2. Y, 
+3. Z
+>;
+
+// identified list
+
+list i<
+1. X, 
+2. y, 
+3. Z
+>;
+
+// adding to the list
+
+i<add: "Orange" | column: 3>
+
+// retriving from the list
+i<get: item.Banana | column: 2> = Z
+
+// retriving if your don't know what it is
+i<column: 2> = Z;
+
+// subtracting from the list
+
+i<remove: item.Orenge | column: 3>
+
+// removing when you don't know what it is
+
+i<remove: column: 3>
+
+// maps
+map User: 
+"name" = "UserName",
+"ID" = "10"
+;
