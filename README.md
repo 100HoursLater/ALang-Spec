@@ -12,6 +12,10 @@
 
 `const atom` is the universal immutable variable declaration keyword
 
+there is no east const/west const nonsense 
+
+it's strictly west const
+
 ------
 
 ### functions 
