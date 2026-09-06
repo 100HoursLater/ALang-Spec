@@ -1,3 +1,7 @@
+module "MyModule" from "./MyFileModule" // <- lib
+module "std" from "./std" // standard package
+
+
 print("Hello/World"); 
 
 /*---------------*/
