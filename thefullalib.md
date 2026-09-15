@@ -4,14 +4,19 @@
 ### <cmd>
 #### classics: 
 `extern:package[store:[], from:[""], name:[""]]` <- this one imports a package from the web
+
 `intern:package[from:[]]` <- this one is for PRE-COMPILED ALANG LIBRARIES 
+
 `auto:compile alang --c --exe --file myfile.alang` <- with this all you have to do is just execute the alib inside of VSCode and the source file referenced will compile to a .exe
+
 `auto:compile alang --c --dll --file myfile.alang` <- same as before, but now instead of a .exe, it will be a .dll
+
 `auto:compile alang --c --lib --file myfile.alang` <- same as before, except we are compiling to a static library (.lib) 
 
 #### core 
 
 `core:source[source_file[""], fpath[], expose? true]` <- this one exposes the constructs inside of your .rs file into alang
+
 `core:source[source_file[""], fpath[], expose? false]` <- one change, `true` -> `false` this is essentially useless 
 
 `core:config --op1` <- this one changes the optimisation level to 1, which is the same as the default 0 (no optimisation) except it handles variables a bit faster, it ranges from 0 to 10 
