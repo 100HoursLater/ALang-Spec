@@ -1,6 +1,5 @@
-module "MyModule" from "./MyFileModule" // <- lib
-module "std" from "./std" // standard package
-
+module std; // normal import
+module {construct} from file.alang; // construct is a placeholder, the only thing allowed there is a function
 
 print("Hello/World"); 
 
