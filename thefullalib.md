@@ -29,8 +29,11 @@
 
 ### <package> 
 `insert:construct[]` <- this is how you insert macros
-`insert:construct:math* []` <- this inserts math macros 
+
+`insert:construct:math* []` <- this inserts math macros
+
 `insert:package=""` <- this inserts a module/package globally across the codebase 
+
 `pack:file --myfile.alang` <- this converts it to a .apack (which is basically a non binary static library for this language)
 
 ---------------------
