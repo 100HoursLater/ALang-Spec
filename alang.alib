@@ -1,0 +1,8 @@
+<package>
+insert:construct["class"::func]; 
+insert:construct:math* [dbl::0.00]; 
+insert:package="same name as the package we extern'd in"
+<?package>;
+<cmd>
+extern:package[store:[/*valid Windows path here*/], from:["valid https://raw.githubusercontent.com repo link here"], name:["name here"]]
+<?cmd>;
