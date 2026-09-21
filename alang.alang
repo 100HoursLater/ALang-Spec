@@ -9,11 +9,13 @@ print("Hello/World");
 atom X = 10.0f; // float
 atom Y = 10i; // integer
 atom Z = "Z"; // string 
+atom I = true; // boolean
 
 // immutable declaration: 
 const atom O = 10i; 
 const atom K = 10.0f;
 const atom L = "L";
+const atom J = true; 
 
 // strings, float and ints is all one has in terms of types
 
