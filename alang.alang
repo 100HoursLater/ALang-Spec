@@ -25,8 +25,10 @@ func i():
 ;
 
 async func o(): 
- await /*value*/: 
-  // yes async functions as well 
+  await /*value*/: 
+    // yes async functions as well 
+  ;
+ 
 ;
 
 
