@@ -1,7 +1,8 @@
 module std; // normal import
 module {construct} from file.alang; // construct is a placeholder, the only thing allowed there is a function
 
-print("Hello/World"); 
+
+print("Hello,World"\n); 
 
 /*---------------*/
 
@@ -9,13 +10,11 @@ print("Hello/World");
 atom X = 10.0f; // float
 atom Y = 10i; // integer
 atom Z = "Z"; // string 
-atom I = true; // boolean
 
 // immutable declaration: 
 const atom O = 10i; 
 const atom K = 10.0f;
 const atom L = "L";
-const atom J = true; 
 
 // strings, float and ints is all one has in terms of types
 
@@ -25,16 +24,20 @@ func i():
 ;
 
 async func o(): 
-  await /*value*/: 
-    // yes async functions as well 
-  ;
- 
+ await /*value*/: 
+  // yes async functions as well 
 ;
 
 
 for: 
-X, X >= 10.0f: 
+atom X, X >= 10.0f: 
 // logic here
+;
+
+// for loops when the var is already defined 
+for: 
+X, X >= 10.0f: 
+   // logic here
 ;
 
 // yes semicolons are how we end an indented block 
@@ -97,3 +100,27 @@ map User:
 "name" = "UserName",
 "ID" = "10"
 ;
+// maps have the same access patterns as lists
+
+func o():
+   X = Y * Z
+   for:
+    Y, Y <= X: 
+      i<add: "Lol" | column: 4>
+   ;
+;
+
+o().return = Z; 
+
+// operators
+ 
+   == // comparison
+   = // assigment 
+   * // multiply
+   / // division 
+   > // more than 
+   < // less than
+   >= // more than equals
+   <= // less than equals
+
+
