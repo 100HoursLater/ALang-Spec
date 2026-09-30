@@ -122,5 +122,11 @@ o().return = Z;
    < // less than
    >= // more than equals
    <= // less than equals
+   + // addition
+   - // subtraction
+   ! //prefix, Logical NOT
+   && // Logical AND
+   || // Logical OR
+    % //modulo
 
 
