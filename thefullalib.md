@@ -26,7 +26,6 @@
 `core:config --alng_syntax --!func --class | class --reflect func` <- this one deletes the `func` syntax as replaces it with class 
 
 ------------
-
 ### <package> 
 `insert:construct[]` <- this is how you insert macros
 
