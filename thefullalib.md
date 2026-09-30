@@ -1,7 +1,7 @@
 # CHEAT SHEET
 ## for ALIB configs
 
-### <cmd>
+### !<cmd>
 #### classics: 
 `extern:package[store:[], from:[""], name:[""]]` <- this one imports a package from the web
 
@@ -26,7 +26,7 @@
 `core:config --alng_syntax --!func --class | class --reflect func` <- this one deletes the `func` syntax as replaces it with class 
 
 ------------
-### <package> 
+### !<package> 
 `insert:construct[]` <- this is how you insert macros
 
 `insert:construct:math* []` <- this inserts math macros
