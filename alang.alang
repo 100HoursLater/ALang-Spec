@@ -30,13 +30,13 @@ async func o():
 
 
 for: 
-atom X, X >= 10.0f: 
+atom X, X >= 10.0f, X--: 
 // logic here
 ;
 
 // for loops when the var is already defined 
 for: 
-X, X >= 10.0f: 
+X, X >= 10.0f, X++: 
    // logic here
 ;
 
@@ -130,5 +130,7 @@ k().return = Z;
    && // Logical AND
    || // Logical OR
     % //modulo
+    -- //decrement
+    ++ //increment
 
 
