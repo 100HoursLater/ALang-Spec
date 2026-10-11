@@ -102,7 +102,7 @@ map User:
 ;
 // maps have the same access patterns as lists
 
-func o():
+func k():
    X = Y * Z
    for:
     Y, Y <= X: 
@@ -110,7 +110,9 @@ func o():
    ;
 ;
 
-o().return = Z; 
+k().return = Z; 
+
+// in nearly all cases assignment is right to left, in the case of piping a functions return value into a variable, that is done left to right
 
 // operators
  
