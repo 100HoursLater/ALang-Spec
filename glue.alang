@@ -1,0 +1,23 @@
+module "glue";
+module "std";
+
+func glue():
+    atom c = "";
+    atom jav = "";
+
+    glue.startlang<
+    1. C
+    >;
+    glue.endlang<
+    1.Java
+    >;
+
+    glue.gcc<get: item.frontend | column: 2> = c
+    glue.jni<get: item.jvm | column: 1> = jav
+    func interop(c,jav): 
+        std.regexp().text("/#include/g").replace("\import\g");
+        std.regexp().text("/<stdio\.\h>/g").replace("\java\.\io\g");
+        // very simple example
+
+    ;
+;
