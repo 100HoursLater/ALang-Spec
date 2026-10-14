@@ -15,8 +15,8 @@ func glue():
     glue.gcc<get: item.frontend | column: 2> = c
     glue.jni<get: item.jvm | column: 1> = jav
     func interop(c,jav): 
-        std.regexp().text("/#include/g").replace("\import\g");
-        std.regexp().text("/<stdio\.\h>/g").replace("\java\.\io\g");
+        std.regexp(c).text("/#include/g").replace("\import\g").return = jav.at(-1i);
+        std.regexp(c).text("/<stdio\.\h>/g").replace("\java\.\io\g").return = jav.at(-1i);
         // very simple example
 
     ;
