@@ -30,7 +30,7 @@ async func o():
 
 
 for: 
-atom X, X >= 10.0f, X--: 
+atom X = 15, X >= 10.0f, X--: 
 // logic here
 ;
 
@@ -38,6 +38,21 @@ atom X, X >= 10.0f, X--:
 for: 
 X, X >= 10.0f, X++: 
    // logic here
+;
+
+// FizzBuzz
+
+for: 
+atom i = 1i, i <= 100, i++: 
+  if: i % 15 == 0: 
+    print("FizzBuzz\n");
+  ; else if: i % 3 == 0:
+    print("Fizz\n");
+  ; else if: i % 5 == 0: 
+    print("Buzz\n"); 
+  ; else: 
+     print(i);
+  ;
 ;
 
 // yes semicolons are how we end an indented block 
